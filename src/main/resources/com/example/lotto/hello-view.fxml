@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="100" maxWidth="350" minHeight="100" minWidth="200" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lotto.HelloController">
+    <columnConstraints>
+        <ColumnConstraints maxWidth="125" minWidth="125" prefWidth="125" />
+        <ColumnConstraints maxWidth="125" minWidth="125" prefWidth="125" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="30.0" prefHeight="30.0" />
+        <RowConstraints minHeight="30.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Button fx:id="btnSorsol" mnemonicParsing="false" onAction="#sorsol" text="Sorsol">
+         <GridPane.margin>
+            <Insets left="30.0" top="25.0" />
+         </GridPane.margin></Button>
+        <Label fx:id="lblSorsolando" text="0" textAlignment="CENTER" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets left="40.0" top="15.0" />
+         </GridPane.margin></Label>
+        <Label fx:id="lblSorsoltSzamok" text="0" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.rowSpan="2">
+         <GridPane.margin>
+            <Insets left="35.0" top="20.0" />
+         </GridPane.margin></Label>
+    </children>
+</GridPane>
